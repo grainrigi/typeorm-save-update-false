@@ -1,0 +1,21 @@
+{
+  "name": "typeorm-save-update-false",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "migrate:gen": "ts-node ./node_modules/typeorm/cli.js migration:generate -d ./index.ts",
+    "migrate:run": "ts-node ./node_modules/typeorm/cli.js migration:run -d ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.2",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "ts-node": "^10.9.1"
+  }
+}
