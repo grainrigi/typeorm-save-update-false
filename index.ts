@@ -48,6 +48,8 @@ async function main() {
 
   // throws
   await datasource.manager.save(entity);
+
+  await datasource.destroy();
 }
 
 if (require.main === module) {
